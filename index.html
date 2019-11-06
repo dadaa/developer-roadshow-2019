@@ -1,0 +1,155 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <style>
+    body {
+      color: #737373;
+      display: flex;
+      margin: 0 auto;
+      width: 1024px;
+      font-size: 28px;
+    }
+
+    h1, h2 {
+      writing-mode: vertical-rl;
+      white-space: nowrap;
+    }
+
+    h1 {
+      margin: 48px 0 0 0;
+      font-size: 72px;
+      -webkit-background-clip: text;
+      background-image: url(tokyo.jpg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: -2400px -1000px;
+      color: transparent;
+    }
+
+    h2 {
+      color: white;
+      padding-inline: 1em;
+    }
+
+    section {
+      display: flex;
+      margin-block: 48px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
+
+    li {
+    }
+
+    figure {
+      margin: 0 0 12px 0;
+      text-align: center;
+    }
+
+    figure img {
+      width: 100%;
+      outline: 1px #737373 solid;
+    }
+
+    figure figcaption {
+      font-size: 20px;
+      color: #ed00b5;
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    a:visited {
+      color: #ed00b5;
+    }
+
+    .myself h2 {
+      background-color: #008ea4;
+    }
+
+    .devtools h2 {
+      background-color: #b5007f;
+    }
+
+    .compatibility h2 {
+      background-color: #058b00;
+    }
+
+    .myself span {
+      width: 220px;
+      height: 200px;
+      float: left;
+    }
+
+    .myself span::after {
+      clip: rect(40px, 200px, 240px, 0px);
+      content: "";
+      background-image: url(my.jpg);
+      background-size: 100%;
+      position: absolute;
+      width: 240px;
+      height: 240px;
+    }
+
+    .myself::after {
+      display: block;
+      content: "";
+      clear: both;
+    }
+    </style>
+  </head>
+  <body>
+    <h1>Developer Roadshow 2019 in Asia</h1>
+    <main>
+      <section class="myself">
+        <h2>Daisuke Akatsuka</h2>
+        <div>
+          <span></span>
+          <p>A previous formula car racer. After working as a soba noodle cook and a welder, Daisuke decided to pursue his passion for programming and began contributing to Firefox in 2006 where he now leads the work on web compatibility tool as well as the animation tool and contributing to other developer tools in Firefox.</p>
+        </div>
+      </section>
+      <section class="devtools">
+        <h2>DevTools</h2>
+        <ul>
+          <li>
+            <a href="https://wiki.developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_CSS">
+              <figure>
+                <img src="inactive-css.png">
+                <figcaption>Inactive CSS</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://wiki.developer.mozilla.org/en-US/docs/Tools/Page_Inspector/How_to/Examine_and_edit_CSS">
+              <figure>
+                <img src="changes.jpg">
+                <figcaption>Changes</figcaption>
+              </figure>
+            </a>
+          </li>
+          <li>
+            <a href="https://wiki.developer.mozilla.org/en-US/docs/Tools/Debugger/Break_on_DOM_mutation">
+              <figure>
+                <img src="dom-breakpoint.png">
+                <figcaption>DOM Breakpoint</figcaption>
+              </figure>
+            </a>
+          </li>
+        </ul>
+      </section>
+      <section class="compatibility">
+        <h2>Web compatibility</h2>
+        <div>
+          <figure>
+            <img src="compatibility.png">
+          </figure>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

@@ -67,22 +67,26 @@
 
     a {
       text-decoration: none;
-    }
-
-    a:visited {
       color: #ed00b5;
     }
 
+    a:visited {
+    }
+
     .myself h2 {
-      background-color: #008ea4;
+      background-color: #0a84ff;
     }
 
     .devtools h2 {
-      background-color: #b5007f;
+      background-color: #008ea4;
     }
 
     .compatibility h2 {
-      background-color: #058b00;
+      background-color: #b5007f;
+    }
+
+    .feedback h2 {
+      background-color: #8000d7;
     }
 
     .myself span {
@@ -106,6 +110,22 @@
       content: "";
       clear: both;
     }
+
+    .feedback div {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .feedback figure img {
+      width: 300px;
+      outline: none;
+    }
+
+    .feedback figure figcaption {
+      font-size: 32px;
+    }
     </style>
 
     <script>
@@ -124,7 +144,9 @@
     </script>
   </head>
   <body>
-    <h3></h3>
+    <span>
+      <h3></h3>
+    </span>
     <h1>Developer Roadshow 2019 in Asia</h1>
     <main>
       <section class="myself">
@@ -169,6 +191,17 @@
           <figure>
             <img src="compatibility.png">
           </figure>
+        </div>
+      </section>
+      <section class="feedback">
+        <h2>Feedback/Follow</h2>
+        <div>
+          <a href="https://twitter.com/firefoxdevtools">
+            <figure>
+              <img src="Fx-Browser-Developer-icon-fullColor-512.png">
+              <figcaption>@firefoxdevtools</figcaption>
+            </figure>
+          </a>
         </div>
       </section>
     </main>

@@ -2,6 +2,7 @@
   <head>
     <meta charset="utf-8">
     <style>
+
     body {
       color: #737373;
       display: flex;
@@ -51,7 +52,7 @@
     }
 
     figure {
-      margin: 0 0 12px 0;
+      margin: 0 0 36px 0;
       text-align: center;
     }
 
@@ -62,7 +63,6 @@
 
     figure figcaption {
       font-size: 20px;
-      color: #ed00b5;
     }
 
     a {
@@ -83,6 +83,10 @@
 
     .compatibility h2 {
       background-color: #b5007f;
+    }
+
+    .compatibility figure {
+      margin: 0;
     }
 
     .feedback h2 {
@@ -127,26 +131,9 @@
       font-size: 32px;
     }
     </style>
-
-    <script>
-    setInterval(() => {
-      const element = document.querySelector("h3");
-      const date = new Date();
-      const y = date.getFullYear();
-      const m = date.getMonth() + 1;
-      const d = date.getDate();
-      const hh = date.getHours();
-      const mm = date.getMinutes().toString().padStart(2, "0");
-      const ss = date.getSeconds().toString().padStart(2, "0");
-
-      element.textContent = `${y}.${m}.${d} ${hh}:${mm}:${ss}`;
-    }, 1000);
     </script>
   </head>
   <body>
-    <span>
-      <h3></h3>
-    </span>
     <h1>Developer Roadshow 2019 in Asia</h1>
     <main>
       <section class="myself">
